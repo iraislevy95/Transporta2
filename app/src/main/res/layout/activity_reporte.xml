@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fondo_reporte"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTitulo"
+        android:text="Reporte"
+        android:textSize="27sp"
+        android:fontFamily="serif"
+        android:textColor="#730b74"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="31dp"
+        />
+
+
+    <EditText
+        android:id="@+id/etNumUnidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Número de Unidad"
+        android:textColorHint="#730b74"
+        android:layout_below="@+id/tvTitulo"
+        android:layout_alignEnd="@+id/tvTitulo"
+        android:layout_marginTop="49dp"
+        android:textSize="18sp"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/groupLimpio"
+        android:layout_below="@+id/imageLimpio"
+        android:layout_alignStart="@+id/etNumUnidad"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbLimpio"
+            android:text="Limpio"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbSucio"
+            android:text="Sucio"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbMuySucio"
+            android:text="Muy Sucio"/>
+
+    </RadioGroup>
+
+    <ImageView
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:src="@drawable/limpio"
+        android:layout_below="@+id/etNumUnidad"
+        android:layout_alignStart="@id/groupLimpio"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/imageLimpio"
+        />
+
+    <ImageView
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:src="@drawable/sucio"
+        android:layout_below="@+id/etNumUnidad"
+        android:layout_toRightOf="@+id/imageLimpio"
+        android:layout_marginLeft="35dp"
+        android:id="@+id/imageSucio"
+        />
+
+    <ImageView
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:src="@drawable/muy_sucio"
+        android:layout_below="@+id/etNumUnidad"
+        android:layout_toRightOf="@+id/imageSucio"
+        android:layout_marginLeft="37dp"
+        android:id="@+id/imageMuySucio"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/groupLleno"
+        android:layout_marginTop="52dp"
+        android:layout_below="@+id/groupLimpio"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vacio"
+            android:id="@+id/rbVacio"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Regular"
+            android:id="@+id/rbRegular"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lleno"
+            android:id="@+id/rbLleno"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hasta su PTM"
+            android:id="@+id/rbHastaPTM"/>
+
+
+    </RadioGroup>
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/vacio"
+        android:id="@+id/imageVacio"
+        android:layout_below="@id/groupLimpio"
+        android:layout_alignStart="@id/groupLleno"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="22dp"
+        />
+
+    <ImageView
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:src="@drawable/regular"
+        android:id="@+id/imageRegular"
+        android:layout_below="@+id/groupLimpio"
+        android:layout_toRightOf="@id/imageVacio"
+        android:layout_alignBottom="@+id/imageVacio"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:src="@drawable/lleno"
+        android:id="@+id/imageLleno"
+        android:layout_below="@+id/groupLimpio"
+        android:layout_toRightOf="@+id/imageRegular"
+        android:layout_alignTop="@+id/imageVacio"
+        android:layout_marginLeft="34dp"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/hasta_ptm"
+        android:id="@+id/imagePTM"
+        android:layout_below="@+id/groupLimpio"
+        android:layout_toRightOf="@+id/imageLleno"
+        android:layout_alignTop="@+id/imageVacio"
+        android:layout_marginLeft="34dp"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chbAmable"
+        android:text="Amable"
+        android:layout_below="@+id/groupLleno"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chbNoParada"
+        android:layout_below="@+id/chbAmable"
+        android:layout_marginLeft="37dp"
+        android:text="No da parada"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chbManejaMal"
+        android:layout_below="@+id/chbAmable"
+        android:layout_toRightOf="@+id/chbNoParada"
+        android:layout_marginLeft="65dp"
+        android:text="Maneja Mal"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear"
+        android:layout_below="@+id/chbManejaMal"
+        android:layout_marginTop="8dp"
+        android:layout_centerInParent="true"
+        />
+
+
+</RelativeLayout>

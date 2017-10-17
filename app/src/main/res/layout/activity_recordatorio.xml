@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dbf7ed"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/recordatorio_back"
+        android:scaleType="centerCrop"
+
+        android:layout_marginTop="79dp"
+        android:layout_below="@+id/btnHora"
+        android:layout_alignParentStart="true"
+        />
+
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Hora"
+        android:textColor="#0e0e0e"
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:id="@+id/btnHora"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spRuta"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvHora"
+        android:textSize="18sp"
+        android:layout_toRightOf="@id/btnHora"
+        android:layout_alignBaseline="@id/btnHora"
+        android:layout_marginLeft="20dp"
+        />
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:id="@+id/spRuta"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btnHora"
+        style="@android:style/Widget.Holo.Light.Spinner"
+        />
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Lugar"
+        android:textColor="#0e0e0e"
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tvLugar"
+        android:layout_alignStart="@+id/btnHora"
+        android:layout_below="@+id/btnHora" />
+
+
+
+</RelativeLayout>

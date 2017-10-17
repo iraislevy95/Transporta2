@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="Rutas">
+        <item> Ruta </item>
+        <item> 622 Lopez Mateos</item>
+        <item> 622 Terranova</item>
+        <item> 55 </item>
+        <item> 380 </item>
+
+
+    </string-array>
+
+
+
+
+</resources>

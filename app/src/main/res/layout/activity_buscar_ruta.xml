@@ -25,6 +25,15 @@
 
         />
 
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:id="@+id/listRutas"
+        android:layout_below="@+id/etBuscarRuta"
+
+        />
+
 
 
 </RelativeLayout>

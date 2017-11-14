@@ -7,7 +7,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/tvNumRuta"
         android:layout_alignParentLeft="true"
-        android:textSize="60sp"
+        android:textSize="50sp"
         android:textStyle="bold"
         android:text="NUM"
         />
@@ -19,7 +19,7 @@
         android:layout_toRightOf="@+id/tvNumRuta"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="5dp"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:text="Origen: "
         />
 
@@ -30,17 +30,17 @@
         android:layout_toRightOf="@+id/tvNumRuta"
         android:layout_below="@+id/tvOrigen"
         android:layout_marginLeft="5dp"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:text="Destino: "
         />
 
     <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_alignParentRight="true"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="5dp"
-        android:layout_alignBottom="@+id/tvNumRuta"
+        android:layout_alignTop="@+id/tvNumRuta"
         android:src="@drawable/map_icon"
 
         />

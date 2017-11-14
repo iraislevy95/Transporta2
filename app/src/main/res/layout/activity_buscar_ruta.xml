@@ -18,12 +18,14 @@
 
         />
 
-    <ImageView
+    <Button
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:src="@drawable/buscar_icon"
+        android:id="@+id/btnBuscar"
+        android:background="@drawable/buscar_icon"
         android:layout_above="@+id/listRutas"
         android:layout_toEndOf="@+id/etBuscarRuta" />
+
 
     <ListView
         android:layout_width="match_parent"

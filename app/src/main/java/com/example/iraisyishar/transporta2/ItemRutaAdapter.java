@@ -38,6 +38,11 @@ public class ItemRutaAdapter extends BaseAdapter {
         return items.get(i).getId();
     }
 
+    public void setItems(ArrayList<Ruta> items) {
+        this.items = items;
+        notifyDataSetChanged();
+    }
+
     @Override
     public View getView(int position, View contentView, ViewGroup parent) {
         View vi=contentView;

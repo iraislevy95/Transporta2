@@ -22,7 +22,7 @@ public class MainWindow extends AppCompatActivity {
         btnRecordatorio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainWindow.this, Recordatorio.class);
+                Intent intent = new Intent(MainWindow.this, RecordatorioWindow.class);
                 startActivity(intent);
             }
         });
@@ -38,7 +38,7 @@ public class MainWindow extends AppCompatActivity {
         btnReporte.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainWindow.this, Reporte.class);
+                Intent intent = new Intent(MainWindow.this, ReporteWindow.class);
                 startActivity(intent);
             }
         });

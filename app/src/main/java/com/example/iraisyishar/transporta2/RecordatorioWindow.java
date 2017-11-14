@@ -12,7 +12,7 @@ import android.widget.TimePicker;
 
 import java.util.Calendar;
 
-public class Recordatorio extends AppCompatActivity {
+public class RecordatorioWindow extends AppCompatActivity {
 
     Spinner spRuta;
     Button btnHora;
@@ -39,7 +39,7 @@ public class Recordatorio extends AppCompatActivity {
                 int minute = c.get(Calendar.MINUTE);
 
 
-                TimePickerDialog timePickerDialog = new TimePickerDialog(Recordatorio.this,
+                TimePickerDialog timePickerDialog = new TimePickerDialog(RecordatorioWindow.this,
                         new TimePickerDialog.OnTimeSetListener(){
                             @Override
                             public void onTimeSet(TimePicker view, int hourOfDay, int minute) {

@@ -40,6 +40,17 @@
         android:textSize="18sp"
         />
 
+    <EditText
+        android:id="@+id/etNumRuta"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="#730b74"
+        android:hint="Ruta"
+        android:layout_alignLeft="@+id/etNumUnidad"
+        android:layout_below="@+id/tvTitulo"
+        android:layout_marginTop="20dp"
+        />
+
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -212,10 +223,22 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/btnCrear"
         android:text="Crear"
         android:layout_below="@+id/chbManejaMal"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="15dp"
         android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/btnUbicacion"
+        android:background="@drawable/btnUbicacion"
+        android:layout_toRightOf="@+id/etNumUnidad"
+        android:layout_alignBottom="@+id/etNumUnidad"
+        android:layout_marginLeft="35dp"
+        android:layout_marginBottom="10dp"
         />
 
 

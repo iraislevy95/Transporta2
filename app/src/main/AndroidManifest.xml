@@ -16,8 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Recordatorio" />
-        <activity android:name=".Reporte" />
+        <activity android:name=".RecordatorioWindow" />
+        <activity android:name=".ReporteWindow" />
         <activity android:name=".BuscarRuta"></activity>
         <uses-permission android:name="android.permission.INTERNET"/>
     </application>

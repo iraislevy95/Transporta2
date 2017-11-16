@@ -87,7 +87,8 @@ public class BuscarRuta extends AppCompatActivity {
                                     encontrado.add(new Ruta(
                                             elemento.getString("number"),
                                             elemento.getString("origin"),
-                                            elemento.getString("destination")));
+                                            elemento.getString("destination"),
+                                            elemento.getString("id")));
                                         Log.d("Agregado","" + encontrado.size());
                                 }
 
@@ -97,7 +98,7 @@ public class BuscarRuta extends AppCompatActivity {
 
                         }
                         if(encontrado.isEmpty() && !numRuta.isEmpty())
-                            encontrado.add(new Ruta(":(","No se encontró ninguna","intenta de nuevo"));
+                            encontrado.add(new Ruta(":(","No se encontró ninguna","intenta de nuevo",""));
 
                     }
                 }, new Response.ErrorListener() {

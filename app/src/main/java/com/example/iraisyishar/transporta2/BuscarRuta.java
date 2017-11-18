@@ -1,6 +1,7 @@
 package com.example.iraisyishar.transporta2;
 
 import android.content.ClipData;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -60,7 +61,8 @@ public class BuscarRuta extends AppCompatActivity {
         listV.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
+                Intent intent = new Intent(BuscarRuta.this, MapWindow.class);
+                startActivity(intent);
             }
         });
 
@@ -115,7 +117,7 @@ public class BuscarRuta extends AppCompatActivity {
         return  encontrado;
     }
 
-    public void justClicked(){
+    /*public void justClicked(){
         if(justPressed){
             Log.d("Se presiono","jusPressed");
             hideSoftKeyboard();
@@ -128,5 +130,5 @@ public class BuscarRuta extends AppCompatActivity {
             InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
             inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
         }
-    }
+    }*/
 }

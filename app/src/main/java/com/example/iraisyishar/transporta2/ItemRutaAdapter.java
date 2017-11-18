@@ -35,7 +35,7 @@ public class ItemRutaAdapter extends BaseAdapter {
 
     @Override
     public long getItemId(int i) {
-        return items.get(i).getId();
+        return i;
     }
 
     public void setItems(ArrayList<Ruta> items) {

@@ -230,16 +230,6 @@
         android:layout_centerInParent="true"
         />
 
-    <Button
-        android:layout_width="37dp"
-        android:layout_height="37dp"
-        android:id="@+id/btnUbicacion"
-        android:background="@drawable/btn_ubicacion"
-        android:layout_toRightOf="@+id/etNumUnidad"
-        android:layout_alignBottom="@+id/etNumUnidad"
-        android:layout_marginLeft="25dp"
-        android:layout_marginBottom="10dp"
-        />
 
 
 </RelativeLayout>

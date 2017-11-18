@@ -16,7 +16,7 @@ import org.json.JSONObject;
 
 public class ReporteWindow extends AppCompatActivity {
 
-    Button btnUbicacion, btnCrear;
+    Button btnCrear;
     RadioButton rbLimpio, rbSucio, rbMuySucio;
     RadioButton rbVacio, rbRegular, rbLleno, rbHastaPTM;
     CheckBox chbAmable, chbNoParada, chbManejaMal;
@@ -34,7 +34,6 @@ public class ReporteWindow extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reporte);
 
-        btnUbicacion = (Button)findViewById(R.id.btnUbicacion);
         btnCrear = (Button)findViewById(R.id.btnCrear);
 
         etNumUnidad = (EditText)findViewById(R.id.etNumUnidad);
@@ -125,14 +124,6 @@ public class ReporteWindow extends AppCompatActivity {
                     AlertDialog alertDialog = alertDialogBuilder.create();
                     alertDialog.show();
                 }
-
-            }
-        });
-
-
-        btnUbicacion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
             }
         });

@@ -1,5 +1,7 @@
 package com.example.iraisyishar.transporta2;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -25,6 +27,8 @@ public class ReporteWindow extends AppCompatActivity {
     boolean amable, noParada, manejaMal;
     String numRuta, numUnidad;
 
+    AlertDialog.Builder alertDialogBuilder;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +53,15 @@ public class ReporteWindow extends AppCompatActivity {
         chbNoParada = (CheckBox)findViewById(R.id.chbNoParada);
         chbManejaMal = (CheckBox)findViewById(R.id.chbManejaMal);
 
+        alertDialogBuilder = new AlertDialog.Builder(this);
+                alertDialogBuilder.setPositiveButton("OK",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int arg1) {
+                                dialog.dismiss();
+                            }
+                        });
+
         btnCrear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -66,7 +79,9 @@ public class ReporteWindow extends AppCompatActivity {
                     limpieza = Reporte.MUY_SUCIO;
                 }
                 else{
-                    ///VENTANA DE ADVERTENCIA
+                    alertDialogBuilder.setMessage("Olvidaste decirnos qué tan limpio está!");
+                    AlertDialog alertDialog = alertDialogBuilder.create();
+                    alertDialog.show();
                     return;
                 }
 
@@ -83,7 +98,9 @@ public class ReporteWindow extends AppCompatActivity {
                     llenado = Reporte.HASTA_SU_PTM;
                 }
                 else{
-                    ///VENTANA DE ADVERTENCIA
+                    alertDialogBuilder.setMessage("Primero dinos qué tan lleno viene");
+                    AlertDialog alertDialog = alertDialogBuilder.create();
+                    alertDialog.show();
                     return;
                 }
 
@@ -104,7 +121,9 @@ public class ReporteWindow extends AppCompatActivity {
                     Log.d("Agregado","y enviado" );
                 }
                 else{
-                    //VENTANA DE ADVERTENCIA
+                    alertDialogBuilder.setMessage("Ups! Antes debes decirnos en qué camión estás");
+                    AlertDialog alertDialog = alertDialogBuilder.create();
+                    alertDialog.show();
                 }
 
             }
